@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعدين برو - منصة التعدين السحابي</title>
+    <meta name="description" content="منصة تعدين العملات الرقمية السحابية - أرباح يومية مضمونة" />
+    <meta name="author" content="Mining Pro" />
+
+    <meta property="og:title" content="تعدين برو - منصة التعدين السحابي" />
+    <meta property="og:description" content="منصة تعدين العملات الرقمية السحابية - أرباح يومية مضمونة" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MiningPro" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        // يجب استبدال 'YOUR_FACEBOOK_APP_ID' بمعرف التطبيق الفعلي الخاص بك
+        FB.init({
+          appId      : 'YOUR_FACEBOOK_APP_ID', 
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v19.0' 
+        });
+        
+        FB.AppEvents.logPageView();   
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         // استخدام اللغة العربية للمكتبة
+         js.src = "https://connect.facebook.net/ar_AR/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
